@@ -896,7 +896,7 @@ const $=id=>document.getElementById(id);
 const COMPANY_OPTIONS=[
  {key:'EARTHLABS',label:'EARTHLABS',pdfName:'EARTHLABS SA',initials:'EL',logo:'icons/earthlabs-logo.png'},
  {key:'HFQ',label:'HFQ',pdfName:'HFQ',initials:'HFQ',logo:''},
- {key:'PIJANDOR DRILLING AND BLASTING',label:'Pijandor drilling and blasting',pdfName:'Pijandor Drilling and Blasting',initials:'PDB',logo:'icons/pijandor-logo.png'}
+ {key:'PIJANDOR DRILLING AND BLASTING',label:'Pijandor drilling and blasting',pdfName:'Pijandor Drilling and Blasting',initials:'PDB',logo:'https://github.com/louisdelange2-max/DSTI/icons/pijandor-logo.png'}
 ];
 function normalizeCompanyName(v){const t=String(v||'').trim().toUpperCase(); if(t.includes('PIJANDOR'))return'PIJANDOR DRILLING AND BLASTING'; if(t.includes('HFQ'))return'HFQ'; if(t.includes('EARTHLAB'))return'EARTHLABS'; return t||'EARTHLABS';}
 function getCompanyConfig(v){const key=normalizeCompanyName(v); return COMPANY_OPTIONS.find(c=>c.key===key)||COMPANY_OPTIONS[0];}
